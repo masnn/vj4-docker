@@ -24,10 +24,10 @@ RUN apt-get update && \
     curl "http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" | \
         gunzip -c > GeoLite2-City.mmdb
 
-ENV VJ_LISTEN=http://0.0.0.0:8888
+ENV VJ_LISTEN=http://0.0.0.0:6688
 
 ADD docker-entrypoint.py /app/src/
 ENTRYPOINT [ "python3", "docker-entrypoint.py" ]
 
-EXPOSE 8888
+EXPOSE 6688
 CMD [ "vj4.server" ]
