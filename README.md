@@ -8,6 +8,10 @@
 	Docker version of <a href="https://github.com/vijos/vj4">vj4</a>, the next generation of <a href="https://vijos.org" target="_blank">Vijos</a>.
 </p>
 
+<p align="center">
+	<small><a href="./README.zh-CN.md">中文</a></small>
+</p>
+
 ***
 
 ## Quick Start
