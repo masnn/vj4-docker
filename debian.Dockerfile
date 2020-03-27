@@ -21,7 +21,7 @@ RUN apt-get update && \
     apt-get install -y libmaxminddb0 mmdb-bin \
         libmaxminddb-dev git build-essential curl && \
     python3 -m pip install -r requirements.txt && \
-    curl "http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" | gunzip -c > GeoLite2-City.mmdb && \
+    curl "https://cdn.vijos.org/fs/254b16ee0aff6a0a885b8265964939dffc413fdb" > GeoLite2-City.mmdb && \
     apt-get purge -y \
         libmaxminddb-dev git build-essential curl && \
     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/*
