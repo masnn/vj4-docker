@@ -22,7 +22,7 @@ RUN apk add --no-cache libmaxminddb \
     python -m pip install -r requirements.txt && \
     apk del --no-cache --purge \
         libmaxminddb-dev alpine-sdk git && \
-    curl "http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" | gunzip -c > GeoLite2-City.mmdb
+    curl "https://cdn.vijos.org/fs/254b16ee0aff6a0a885b8265964939dffc413fdb" > GeoLite2-City.mmdb
 
 ENV GIT_PYTHON_REFRESH=quiet
 ENV VJ_LISTEN=http://0.0.0.0:8888
